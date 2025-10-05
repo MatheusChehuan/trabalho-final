@@ -16,7 +16,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('C:/Users/mathe/Downloads/Serratec/trabalho final/trabalho final frontend/assets/wallpaper.webp');
+    background-image: url('../assets/wallpaper.webp');
 }
 
 /* barra de navegação*/

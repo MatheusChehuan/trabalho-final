@@ -11,12 +11,12 @@ body {
 }
 
 main {
-    margin-top: 100px;
-    min-height: 800px;
+    height: 100%;
+    margin-top: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('./assets/wallpaper.webp');
+    background-image: url('C:/Users/mathe/Downloads/Serratec/trabalho final/trabalho final frontend/assets/wallpaper.webp');
 }
 
 /* barra de navegação*/
@@ -54,6 +54,7 @@ nav,
     padding: 18px;
     font-size: 1.1rem;
     border-radius: 10px;
+    color: #EFE65A;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
 }
@@ -96,7 +97,6 @@ nav,
 }
 
 .logo {
-    /*margin-top: 15px;*/
     height: 6rem;
 }
 
@@ -109,10 +109,8 @@ nav,
 
 .links {
     top: 100px;
-    /*position: fixed;*/
     width: 100%;
     z-index: 1000;
-    /* garante que fica acima de tudo */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);  
     height: 3rem;
     background-color: #D96C21;
@@ -133,64 +131,9 @@ nav,
     cursor: pointer;
 }
 
-.derretendo {
-    z-index: 1;
-    top: 147px;
-    height: 210px;
-    background-image: url('./assets/derretendo.png');
-    background-position: center;
-}
-
-.title-card {
-    margin-top: 140px;
-    margin-left: 60px;
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(5, 1fr);
-    width: 90%;
-}
-
-.card {
-    width: 100%;
-    margin: 20px;
-    border: 2px solid #2c2b2b;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #2c2b2b;
+.caixavideo{
 
 }
-
-.card:hover {
-    transform: scale(1.03);
-}
-
-.card img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.card-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 300;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
-    color: #EFE65A;
-}
-
-.ad {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-/*dev*/
 .dev {
     background-color: #EFE65A;
     width: 100%;
@@ -222,46 +165,4 @@ nav,
     line-height: 1.8rem;
     width: 50%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/*newsletter*/
-.newsletter-caixa {
-    padding: 2rem;
-    width: 100%;
-    /*background: #2c2b2b;*/
-    color: #2c2b2b;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.newsletter-caixa .assinar {
-    width: 45%;
-    background: #2c2b2b;
-    color: #EFE65A;
-    font-size: 1.8rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 300;
-    border: none;
-    border-radius: 30px;
-    margin-top: 1px;
-    cursor: pointer;
-}
-
-.assinar:hover {
-    transform: scale(1.05);
-}
-
-.newsletter {
-    width: 45%;
-    color: #2c2b2b;
-    background: #EFE65A;
-    border: none;
-    border-radius: 12px;
-    padding: 40px 0 40px 0;
-    margin: 40px 0 40px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }

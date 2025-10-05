@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cheesevideos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="barra-items">
+            <div class="barra-conteudo">
+                <img src="C:\Users\mathe\Downloads\Serratec\trabalho final\trabalho final frontend\assets\logo.png" class="logo" alt="Logo do site">
+                <div class="barra-pesquisa" style="display: flex; align-items: center;">
+                    <input type="text" placeholder="Pesquisa" required
+                        style=" width: 60%; background-color:white; padding: 18px; font-size: 1.1rem; border-radius: 15px; border: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 300; outline: none;">
+                    <button type="submit" class="pesquisa" style=>
+                        Buscar
+                    </button>
+                </div>
+                <button type="submit" class="login">
+                    login
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="links">
+        <a href="#Derretidos">Derretidos</a>
+        <a href="#Franceses">Franceses</a>
+        <a href="#Cheddar">Cheddar</a>
+        <a href="#Gorgonzola">Gorgonzola</a>
+        <a href="#Contato">Contato</a>
+        <a href="#Sobre">Sobre</a>
+    </div>
+    <div class="derretendo"></div>
+
+    <main>
+       <section class = caixavideo>
+    <div id="video-container" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <!-- O vídeo será inserido aqui -->
+    </div>
+    <script>
+        // Pega o ID do vídeo da URL
+        const params = new URLSearchParams(window.location.search);
+        const videoId = params.get('id');
+        if (videoId) {
+            document.getElementById('video-container').innerHTML = `
+                <iframe width="800" height="450"
+                    src="https://www.youtube.com/embed/${videoId}"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            `;
+        } else {
+            document.getElementById('video-container').innerHTML = '<p>Vídeo não encontrado.</p>';
+        }
+    
+       
+       </script>
+     <div class = video>
+            <h2 style="font-size: 1.5rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 300; text-align: center; margin-bottom: 40px;">
+                Assista nossos vídeos e aprenda mais sobre queijos!
+       </div>   
+    </section>
+       </main>
+</body>
+
+</html>
